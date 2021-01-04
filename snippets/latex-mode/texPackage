@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: texPackage
+# key: /package
+# --
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{xcolor}

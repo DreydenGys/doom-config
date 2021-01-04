@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: JavaAbstractClass
+# key: /aclass 
+# --
+public abstract class `(file-name-base (buffer-file-name))` {
+
+}

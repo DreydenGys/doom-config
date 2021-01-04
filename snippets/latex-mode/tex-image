@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:tex-image
+# key: /image
+# --
+\includegraphics[height=\textheight, width=\textwidth, keepaspectratio=true]{SOURCE}
