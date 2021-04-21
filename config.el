@@ -99,3 +99,9 @@
 )
 ;; Magit auto credentials
 (setq auth-sources '("~/.authinfo.gpg"))
+
+
+;; Dired shortcut
+(after! dired
+  (map! :map dired-mode-map
+        :n "°" #' dired-create-empty-file))
