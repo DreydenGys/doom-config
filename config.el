@@ -105,3 +105,6 @@
 (after! dired
   (map! :map dired-mode-map
         :n "°" #' dired-create-empty-file))
+
+;; Add snap to PATH
+(setenv "PATH" (concat (getenv "PATH") ":/snap/bin"))
