@@ -1,0 +1,83 @@
+# -*- mode: snippet -*-
+# name: tex-reseach
+# key: /research
+# condition: t
+# --
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{natbib}
+\bibliographystyle{unsrt}
+%% Title
+\title{
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{STEM Fellowship Big Data Challenge 2020} \\ [10pt]
+		\huge Project Title \\
+}
+\selectlanguage{english}
+\usepackage{authblk}
+\author[1]{Author One}
+\author[1]{Author Two}
+\author[1]{Author Three}
+\author[2]{Author Four}
+\affil[1]{High School 1}
+\affil[2]{High School 2}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+%% abstract
+\end{abstract} \\
+\\
+{\textbf{Keywords} \\
+pick, 3-5, good, keywords}
+
+\section{Introduction}
+%% introduction
+
+\section{Materials \& Methods}
+%% materials
+
+\section{Results}
+%% results
+
+Including figures into \LaTeX\ can seem intimidating at first, but Overleaf makes it easy: simply click the 'Project' button above, select 'Files', and upload away from your computer. Then, insert the file name into the appropriate section of the code below.  Figure 1  shows the output of such code. A pretty good guide to formatting figures can be found at \url{https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions#Figures}.
+\\
+
+{\scriptsize
+\begin{verbatim}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{test.png}
+    \caption{Hello!}
+\end{figure}
+\end{verbatim}
+}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/test.png}
+  \caption{Notice how \LaTeX\ automatically numbers this figure.}
+\end{figure}
+
+
+\section{Discussion}
+%% discussion
+
+\section*{Conclusions}
+%% conclusions
