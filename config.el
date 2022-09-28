@@ -110,3 +110,9 @@
 
 ;; Add snap to PATH
 (setenv "PATH" (concat (getenv "PATH") ":/snap/bin"))
+
+
+;; Disable line number in org-tree-slide mode
+(add-hook 'org-tree-slide-mode-hook (lambda () (setq-local display-line-numbers nil)))
+
+(after! org-tree-slide (setq org-tree-slide-header t))
