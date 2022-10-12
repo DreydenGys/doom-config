@@ -29,7 +29,7 @@
 (setq doom-theme 'doom-dark+)
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/notes/")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -116,3 +116,10 @@
 (add-hook 'org-tree-slide-mode-hook (lambda () (setq-local display-line-numbers nil)))
 
 (after! org-tree-slide (setq org-tree-slide-header t))
+
+;; deft config
+(setq deft-directory org-directory
+      deft-extensions '("org" "md" "txt" "pdf")
+      deft-default-extension "org"
+      deft-recursive t
+      deft-use-filename-as-title t)
